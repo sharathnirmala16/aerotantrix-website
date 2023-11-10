@@ -1,0 +1,48 @@
+@media (max-width: 599px) {
+  .mat-toolbar {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .mat-toolbar-row {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .mat-toolbar-logo {
+    margin: 1rem 0rem;
+  }
+}
+
+@media (min-width: 600px) {
+  .mat-toolbar {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .toolbar-buttons {
+    display: flex;
+    justify-content: right;
+    margin-right: 2rem;
+  }
+
+  .mat-toolbar-logo {
+    margin: 2rem;
+  }
+
+  .navbar-button {
+    margin-left: 4rem;
+  }
+}
+
+.navbar-button {
+  transition: color 0.3s;
+  &:hover {
+    cursor: pointer;
+    color: #9da2ab;
+  }
+}
+
+// .spacer {
+//   flex: 1 1 auto;
+// }
