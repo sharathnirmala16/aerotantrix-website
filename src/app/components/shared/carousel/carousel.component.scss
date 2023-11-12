@@ -1,0 +1,57 @@
+.slide {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  background-color: black;
+  transition: background-image 0.3s ease-in-out;
+}
+
+.right-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: 32px;
+  font-size: 45px;
+  background-color: transparent;
+  color: white;
+  z-index: 1;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  &:hover {
+    text-shadow: 0 0 3px #fff, 0 0 8px #fff, 0 0 14px #fff;
+  }
+}
+
+.left-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: 32px;
+  font-size: 45px;
+  background-color: transparent;
+  color: white;
+  z-index: 1;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  &:hover {
+    text-shadow: 0 0 3px #fff, 0 0 8px #fff, 0 0 14px #fff;
+  }
+}
+
+.carousel {
+  position: relative;
+  height: 100%;
+}
+
+.dots-container {
+  display: flex;
+  justify-content: center;
+}
+
+.dot {
+  margin: 0 3px;
+  cursor: pointer;
+  font-size: 20px;
+}

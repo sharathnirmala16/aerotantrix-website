@@ -1,10 +1,27 @@
 <mat-toolbar color="primary">
-  <mat-toolbar-row
-    ><span class="mat-toolbar-logo">Aerotantrix</span></mat-toolbar-row
-  >
+  <mat-toolbar-row class="logo-row">
+    <img
+      class="mat-toolbar-logo"
+      src="assets/images/aerotantrix_white_logo.png"
+      alt="Aerotantrix"
+      (mouseenter)="onImageEnter()"
+      (mouseleave)="onImageLeave()"
+      (mousedown)="onMouseDown()"
+      [ngStyle]="{ opacity: imageEnter ? '0' : '1' }"
+    />
+    <img
+      class="mat-toolbar-tag"
+      src="assets/images/aerotantrix_white_tag.png"
+      alt="Aerotantrix"
+      (mouseenter)="onImageEnter()"
+      (mouseleave)="onImageLeave()"
+      (mousedown)="onMouseDown()"
+      [ngStyle]="{ opacity: imageEnter ? '1' : '0' }"
+    />
+  </mat-toolbar-row>
   <!-- <div class="spacer"></div> -->
   <mat-toolbar-row class="toolbar-buttons">
-    <a class="navbar-button">Home</a>
+    <a class="navbar-button">Our Team</a>
     <a class="navbar-button">Gallery</a>
     <a class="navbar-button">Contact</a>
   </mat-toolbar-row>

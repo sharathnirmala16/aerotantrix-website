@@ -1,4 +1,4 @@
-@media (max-width: 599px) {
+@media (max-width: 710px) {
   .mat-toolbar {
     flex-direction: column;
     justify-content: center;
@@ -11,10 +11,16 @@
 
   .mat-toolbar-logo {
     margin: 1rem 0rem;
+    width: auto;
+    height: 3.8rem;
+  }
+
+  .toolbar-buttons {
+    border: 1px solid rgba($color: #000000, $alpha: 0.4);
   }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 710px) {
   .mat-toolbar {
     flex-direction: row;
     justify-content: center;
@@ -27,7 +33,9 @@
   }
 
   .mat-toolbar-logo {
-    margin: 2rem;
+    padding: 0.5rem;
+    width: auto;
+    height: 3.8rem;
   }
 
   .navbar-button {
@@ -36,11 +44,39 @@
 }
 
 .navbar-button {
-  transition: color 0.3s;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  transition: text-shadow 0.3s ease-in-out;
+  text-transform: uppercase;
+  letter-spacing: 2px;
   &:hover {
+    text-shadow: 0 0 3px #fff, 0 0 8px #fff, 0 0 14px #fff;
     cursor: pointer;
-    color: #9da2ab;
   }
+}
+
+.mat-toolbar {
+  background-color: transparent;
+}
+
+.logo-row {
+  margin: 0.5rem 0rem;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+mat-toolbar-row img:first-child {
+  position: relative;
+  transition: opacity 0.5s ease-in-out;
+  cursor: pointer;
+}
+mat-toolbar-row img:last-child {
+  position: absolute;
+  zoom: 50%;
+  transition: opacity 0.5s ease-in-out;
+  cursor: pointer;
 }
 
 // .spacer {
