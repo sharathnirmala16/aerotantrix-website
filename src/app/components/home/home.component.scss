@@ -14,13 +14,13 @@
   }
 
   .header-text {
-    margin-top: 0.5em;
+    margin-top: 1em;
     text-align: center;
-    line-height: 1em;
+    line-height: 1.25em;
   }
 
   .body-text {
-    text-align: center;
+    text-align: justify;
   }
 }
 
@@ -69,4 +69,5 @@
   font-weight: 900;
   font-size: 4rem;
   margin-bottom: 2rem;
+  color: #9da2ab;
 }
